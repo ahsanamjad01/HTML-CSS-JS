@@ -1,0 +1,29 @@
+/* style.css */
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+@keyframes jump {
+    0% { top: 150px; }
+    30% { top: 100px; }
+    70% { top: 100px; }
+    100% { top: 150px; }
+}
+
+.animate {
+    animation: jump 300ms linear;
+}
